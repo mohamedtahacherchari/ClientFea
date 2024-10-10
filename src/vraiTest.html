@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Devis</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .invoice-details {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .summary {
+            text-align: center;
+        }
+
+        .but, .but2 {
+            display: inline-block;
+            padding: 7px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border: 0;
+            border-radius: 100px;
+            color: green;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .column {
+                flex-basis: 50%;
+            }
+
+            .invoice-details {
+                margin-right: 0;
+            }
+
+            table {
+                margin: 50px 0;
+            }
+
+            .but:hover, .but2:hover {
+                transform: scale(1.05) rotate(-1deg);
+            }
+
+            .but2:hover::before {
+                content: "Enregistez les modifications avant de les imprimer!!";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #000;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+<div class="column">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="">
+                    <tr>
+                        <td align="center" valign="top" style="padding: 20px;">
+                            <img src="https://res.cloudinary.com/dcdei4osp/image/upload/v1692609330/green-links-logo-simplifie_mljnej.png" alt="logo" width="250" style="display: block;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 10px; font-size: 12px;">
+                            111 rue Anselme Rondenay 94400 Vitry-sur-Seine France
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 10px; font-size: 12px;">
+                            +33 (0) 1 88 32 77 68
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 10px; font-size: 12px;">
+                            contact@greenlinks.fr
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 10px; font-size: 12px;">
+                            www.greenlinks.fr
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="margin-left: 20%;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td align="center">
+        <table width="300" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="center" style="font-size: 16px; text-shadow: 2px 2px 5px grey;">
+                    DEVIS-${num}
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="font-size: 15px; text-shadow: 2px 2px 5px grey;">
+                    Date d'estimation: ${date1}
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="font-size: 15px; text-shadow: 2px 2px 5px grey;">
+                    Valable jusqu'au: ${date3}
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</div>
+</div>
+
+<div style="margin-top: 50px;">
+    <div>${devis.nomDevis}</div>
+    <div>${devis.clientf}</div>
+    <div>${devis.adresse}</div>
+    <div>${devis.codePostale}</div>
+</div>
+
+<table>
+    <tbody>
+        <td>Devise :</td>
+       
+        <td> <div style="margin-right : 350px;">${devis.saveDevise}<div>
+        </td>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <th>Produit</th>
+        <th>Date</th>
+        <th>Quantité</th>
+        <th>Unité</th>
+        <th>Prix</th>
+        <th>Remise</th>
+        <th>TVA%</th>
+        <th>Montant HT</th>
+        <th>Montant</th>
+    </tr>
+    </thead>
+    <tbody>
+    ${devis.items.map((itemField, index) => (
+    `<tr key="${index}">
+        <td>${itemField.product}</td>
+        <td>${itemField.date2}</td>
+        <td>${itemField.qte}</td>
+        <td>${itemField.unite}</td>
+        <td>${itemField.prix}</td>
+        <td>${itemField.remise}</td>
+        <td>${itemField.tva}</td>
+        <td>${(itemField.montantHT2 = itemField.qte * itemField.prix - itemField.remise).toFixed(2)}</td>
+        <td>${(itemField.montant2 = (itemField.qte * itemField.prix) - itemField.remise + (itemField.qte * itemField.prix) * itemField.tva / 100).toFixed(2)}</td>
+    </tr>`
+    )).join('')}
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+    <tr>
+        <td><div>Somme de remise : </div></td>
+        <td><div style="margin-right: 400px ;">${devis.totalRemise}</div></td>
+    </tr>
+    </tbody>
+</table>
+
+<div style="margin-top: 50px;">
+    <div>Résumé de devis</div>
+    <table>
+        <thead>
+        <tr>
+            <th>Total HT</th>
+            <th>Remise</th>
+            <th>Total dû</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>${devis.totalHorsTva}</td>
+            <td>${devis.totalRemise}</td>
+            <td>${devis.total}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>Signature du client</p>
+<p>(Signé et accepté)</p>
+
+</body>
+</html>

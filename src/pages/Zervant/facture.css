@@ -1,0 +1,8 @@
+
+@media print {
+    /* Masquer le bouton d'impression */
+    .print-button {
+      display: none;
+      
+    }
+  }

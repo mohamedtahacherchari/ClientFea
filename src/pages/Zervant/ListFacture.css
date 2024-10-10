@@ -1,0 +1,44 @@
+/* Define a CSS class for the table to make it responsive */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6%;
+    position: relative;
+    z-index: 9999 ;
+    background-color: white;
+  }
+  
+/* Add this CSS code to your stylesheet */
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    table.responsive-table {
+      display: block;
+    }
+    table.responsive-table thead {
+      display: none; /* Hide table headers */
+    }
+    table.responsive-table tr {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+    table.responsive-table td {
+      display: block;
+    }
+  }
+  
+  /* For screens 769px and larger */
+  @media (min-width: 769px) {
+    table.responsive-table tr {
+      display: table-row;
+      border: 1px solid #ccc;
+      flex-direction: row;
+    }
+    table.responsive-table th,
+    table.responsive-table td {
+      display: table-cell;
+      text-align: left;
+      padding: 10px;
+    }
+  }
