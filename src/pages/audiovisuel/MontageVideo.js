@@ -41,7 +41,7 @@ const MontageVideo = ({ alt, style, ShowAudiovisuelsApi }) => {
         {/* Utilisation de navigate au lieu des liens externes */}
         <p>{firstActiveAudiovisuel.describe}</p>
         <a
-  onClick={() => navigate('/Video1')}
+  onClick={() => navigate('/inv/Video1')}
   style={{ 
     display: 'block', 
     marginBottom: 'px',
@@ -55,7 +55,7 @@ const MontageVideo = ({ alt, style, ShowAudiovisuelsApi }) => {
   Initiation au montage vidéo - Partie 1
 </a>
 <a
-  onClick={() => navigate('/Video2')}
+  onClick={() => navigate('/inv/Video2')}
   style={{ 
     display: 'block', 
     cursor: 'pointer',

@@ -111,7 +111,7 @@ const UpdateApprendre = ({ updateApprendreApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateApprendreApi(data, id, token));
      
-    navigate("/MyComponentReplay7")
+    navigate("/inv/MyComponentReplay7")
     } catch (err) {
       setError(true);
       console.error("Failed to update Investissement:", err);
@@ -125,7 +125,7 @@ const UpdateApprendre = ({ updateApprendreApi}) => {
       await updateApprendreApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay8";
+      window.location.href = "/inv/MyComponentReplay8";
     } catch (err) {
       setError(true);
       console.error("Failed to update apprendre:", err);

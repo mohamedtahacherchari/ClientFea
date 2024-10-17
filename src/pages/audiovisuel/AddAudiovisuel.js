@@ -46,7 +46,7 @@ const AddAudiovisuel = ({addAudiovisuelApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -84,7 +84,7 @@ const AddAudiovisuel = ({addAudiovisuelApi, error}) => {
             const result = await addAudiovisuelApi(data, token);
         
             if (result === "success") {
-              navigate("/MyComponentReplay3");
+              navigate("/inv/MyComponentReplay3");
             } else {
               setError(true);
               console.error("Failed to add event.");

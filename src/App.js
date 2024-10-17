@@ -61,12 +61,12 @@ const ResetPasswordRoute = () => {
 	
 		<Routes>
 		<Route path="/*" element={isLogged ? <Home3/> : <SignUp/>} />
-        <Route path='/inv/signin' element={isLogged ? <Home3/> : <SignIn/>} exact />
+        <Route path='/signin' element={isLogged ? <Home3/> : <SignIn/>} exact />
 {/*		<Route path='/:token'  element={<ResetPasswordRoute />} />
 */}		<Route path="/forgot" element={<ForgotPassword/>} />
 {/*		<Route path='/inv/chats' element={<Chatpage/>} />
 */}		<Route path='/inv' element={<GoogleOneTapLogin/>}/>
-		<Route path="/active/:activation_token" element={<EmailActivation/>} />
+		<Route path="/:activation_token" element={<EmailActivation/>} />
 
 	  </Routes>
 	  </DndProvider>

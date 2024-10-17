@@ -111,7 +111,7 @@ const UpdateEntraide = ({ updateEntraideApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateEntraideApi(data, id, token));
      
-    navigate("/MyComponentReplay4")
+    navigate("/inv/MyComponentReplay4")
     } catch (err) {
       setError(true);
       console.error("Failed to update Entraide:", err);
@@ -125,7 +125,7 @@ const UpdateEntraide = ({ updateEntraideApi}) => {
       await updateEntraideApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay5";
+      window.location.href = "/inv/MyComponentReplay5";
     } catch (err) {
       setError(true);
       console.error("Failed to update entraide:", err);

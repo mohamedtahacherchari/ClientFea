@@ -50,7 +50,7 @@ const MyComponent = () => {
         button
         disableRipple  // Disable ripple effect on hover
         component={Link}  // Utilisation du composant Link
-        to="/LinkToOrganigramme"  // Spécifiez le chemin de votre page ici
+        to="/inv/LinkToOrganigramme"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
             <OrganigrammeEFAIcon/>
@@ -64,7 +64,7 @@ const MyComponent = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/LinkToReseaux"  // Spécifiez le chemin de votre page ici
+        to="/inv/LinkToReseaux"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
             <EFAResIcon/>
@@ -78,7 +78,7 @@ const MyComponent = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/SeminairesIcon2"  // Spécifiez le chemin de votre page ici
+        to="/inv/SeminairesIcon2"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
             <SeminaireIcon />
@@ -92,7 +92,7 @@ const MyComponent = () => {
          className={classes.listItem} 
          button
          component={Link}  // Utilisation du composant Link
-          to="/LivretBlanc"  // Spécifiez le chemin de votre page ici
+          to="/inv/LivretBlanc"  // Spécifiez le chemin de votre page ici
          >
           <ListItemIcon>
             <EFAliv/>
@@ -106,7 +106,7 @@ const MyComponent = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/Podcast"  // Spécifiez le chemin de votre page ici
+        to="/inv/Podcast"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
             <PodcastIcon/>
@@ -120,7 +120,7 @@ const MyComponent = () => {
         className={classes.listItem}
          button
          component={Link}  // Utilisation du composant Link
-         to="/Challenge"  // Spécifiez le chemin de votre page ici
+         to="/inv/Challenge"  // Spécifiez le chemin de votre page ici
          >
           <ListItemIcon>
             <ChallengeIcon/>
@@ -134,7 +134,7 @@ const MyComponent = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/Video"  // Spécifiez le chemin de votre page ici
+        to="/inv/Video"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
           <NewsIcon/>
@@ -148,7 +148,7 @@ const MyComponent = () => {
          className={classes.listItem} 
          button
          component={Link}  // Utilisation du composant Link
-        to="/Equipe2"  // Spécifiez le chemin de votre page ici
+        to="/inv/Equipe2"  // Spécifiez le chemin de votre page ici
          >
           <ListItemIcon>
           <EquipeIcon/>
@@ -162,7 +162,7 @@ const MyComponent = () => {
         className={classes.listItem}
          button
          component={Link}  // Utilisation du composant Link
-         to="/LinkToModeration"
+         to="/inv/LinkToModeration"
          >
           <ListItemIcon>
           <Moderation/>
@@ -176,7 +176,7 @@ const MyComponent = () => {
         className={classes.listItem}
          button
          component={Link}  // Utilisation du composant Link
-         to="/LinkToContact"
+         to="/inv/LinkToContact"
          >
           <ListItemIcon>
           <ContactIcon/>

@@ -8,7 +8,7 @@ const Rejoignez = () => {
     const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/FicheProjetInvestir'); // Remplacez ceci par le chemin de votre route
+    navigate('/inv/FicheProjetInvestir'); // Remplacez ceci par le chemin de votre route
   };
   return (
     <div style={{ marginBottom: '800px', paddingLeft: '20px' }}>

@@ -123,7 +123,7 @@ console.log(entraides)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay5');
+          navigate('/inv/MyComponentReplay5');
         }
       }
     } catch (err) {
@@ -134,7 +134,7 @@ console.log(entraides)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/addEntraide"
+        to="/inv/addEntraide"
         color="primary"
         className={classes.addButton}
       >
@@ -149,7 +149,7 @@ console.log(entraides)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarEntraide'}
+      to={'/inv/AppNavbarEntraide'}
     >
       <ListItemText
         primary={entraide.title}
@@ -183,7 +183,7 @@ console.log(entraides)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateEntraide/${entraide.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateEntraide/${entraide.id}`}>
           <EditIcon />
         </IconButton>
       )}

@@ -6,7 +6,7 @@ const HomeReplay = () => {
   return (
     <div>
           <Routes>
-         <Route path='/Sante' element={<Sante/>} />
+         <Route path='/inv/Sante' element={<Sante/>} />
 
          </Routes>
     </div>

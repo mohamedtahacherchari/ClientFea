@@ -123,7 +123,7 @@ console.log(entretiens)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay6');
+          navigate('/inv/MyComponentReplay6');
         }
       }
     } catch (err) {
@@ -134,7 +134,7 @@ console.log(entretiens)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/addEntretien"
+        to="/inv/addEntretien"
         color="primary"
         className={classes.addButton}
       >
@@ -149,7 +149,7 @@ console.log(entretiens)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarEntretien'}
+      to={'/inv/AppNavbarEntretien'}
     >
       <ListItemText
         primary={entretien.title}
@@ -183,7 +183,7 @@ console.log(entretiens)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateEntretien/${entretien.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateEntretien/${entretien.id}`}>
           <EditIcon />
         </IconButton>
       )}

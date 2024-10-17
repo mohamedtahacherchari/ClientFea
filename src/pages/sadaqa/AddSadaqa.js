@@ -81,7 +81,7 @@ const AddSadaqa = ({addSadaqaApi, error}) => {
             const result = await addSadaqaApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay10");
+              navigate("/inv/MyComponentReplay10");
             } else {
               setError(true);
               console.error("Failed to add event.");

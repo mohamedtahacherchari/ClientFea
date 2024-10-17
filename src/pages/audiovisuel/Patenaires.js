@@ -22,7 +22,7 @@ const Partenaires = ({ ShowAudiovisuelsApi }) => {
     <div className="container">
       {firstActiveAudiovisuel.describe2}
       <a
-  onClick={() => navigate('/Youtube1')}
+  onClick={() => navigate('/inv/Youtube1')}
   style={{ 
     display: 'block', 
     marginBottom: 'px',
@@ -36,7 +36,7 @@ const Partenaires = ({ ShowAudiovisuelsApi }) => {
  {firstActiveAudiovisuel.youtubeTitre}
 </a>
 <a
-  onClick={() => navigate('/Youtube2')}
+  onClick={() => navigate('/inv/Youtube2')}
   style={{ 
     display: 'block', 
     cursor: 'pointer',

@@ -94,7 +94,7 @@ const MyComponentReplay = ({ ShowEventsApi }) => {
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay');
+          navigate('/inv/MyComponentReplay');
         }
       }
     } catch (err) {
@@ -115,7 +115,7 @@ const MyComponentReplay = ({ ShowEventsApi }) => {
             button
             disableRipple
             component={Link}
-            to={`/event/${event.id}`}
+            to={`/inv/event/${event.id}`}
           >
             <ListItemText
               primary={event.title}
@@ -129,7 +129,7 @@ const MyComponentReplay = ({ ShowEventsApi }) => {
           <img src={event.imageUrl} alt="Event Icon" className={classes.image} />
           {/* Ajoutez le console.log ici */}
           {console.log("URL de l'image transformée :", event.imageUrl)}
-          {user.role == 1 && <IconButton component={Link} to={`/event/${event.id}/update`}>
+          {user.role == 1 && <IconButton component={Link} to={`/inv/event/${event.id}/update`}>
             <EditIcon />
           </IconButton>}
   {user.role == 1 && <IconButton onClick={(e) => handleDelete2(e,event.id)}>

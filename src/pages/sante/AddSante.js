@@ -44,7 +44,7 @@ const AddSante = ({addSanteApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -54,24 +54,7 @@ const AddSante = ({addSanteApi, error}) => {
    
    
       console.log(selectedClients,"les clients séléctionnés")
-  
-        /*const onSubmit = async (data) => {
-          data.selectedClients = selectedClients; // Ensure selectedClients is part of the data object
-          try {
-            
-            const result = await addInvestirApi(data, token);
-            console.log(data)
-            if (result === "success") {
-              navigate("/MyComponentReplay7");
-            } else {
-              setError(true);
-              console.error("Failed to add event.");
-            }
-          } catch (err) {
-            setError(true);
-            console.error("Failed to add event:", err);
-          }
-        };*/
+
 
         const onSubmit = async (data) => {
           console.log("Form data:", data);
@@ -81,7 +64,7 @@ const AddSante = ({addSanteApi, error}) => {
             const result = await addSanteApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay11");
+              navigate("/inv/MyComponentReplay11");
             } else {
               setError(true);
               console.error("Failed to add event.");

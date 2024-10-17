@@ -5,7 +5,7 @@ const PlanComponent = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/FicheProjetApprendre'); // Remplacez ceci par le chemin de votre route
+    navigate('/inv/FicheProjetApprendre'); // Remplacez ceci par le chemin de votre route
   };
 
   return (

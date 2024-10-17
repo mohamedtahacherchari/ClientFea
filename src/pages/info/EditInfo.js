@@ -168,7 +168,7 @@ const UpdateInfo = ({updateInfoApi}) => {
           // **Modification 4: Ajout de la Gestion des Erreurs pour les Appels API**
           // Vérifie la réponse de l'API et navigue vers une autre page si l'opération est réussie.
           if (response === "response was successful") {
-            navigate("/info2");
+            navigate("/inv/info2");
           }
         } catch (err) {
           setError(true);

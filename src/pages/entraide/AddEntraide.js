@@ -44,7 +44,7 @@ const AddEntraide = ({addEntraideApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -61,7 +61,7 @@ const AddEntraide = ({addEntraideApi, error}) => {
             const result = await addEntraideApi(data, token);
         
             if (result === "success") {
-              navigate("/MyComponentReplay5");
+              navigate("/inv/MyComponentReplay5");
             } else {
               setError(true);
               console.error("Failed to add event.");

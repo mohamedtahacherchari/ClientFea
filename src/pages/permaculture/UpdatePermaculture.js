@@ -111,7 +111,7 @@ const UpdatePermaculture = ({ updatePermacultureApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updatePermacultureApi(data, id, token));
      
-    navigate("/MyComponentReplay9")
+    navigate("/inv/MyComponentReplay9")
     } catch (err) {
       setError(true);
       console.error("Failed to update Investissement:", err);
@@ -125,7 +125,7 @@ const UpdatePermaculture = ({ updatePermacultureApi}) => {
       await updatePermacultureApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay9";
+      window.location.href = "/inv/MyComponentReplay9";
     } catch (err) {
       setError(true);
       console.error("Failed to update permaculture:", err);

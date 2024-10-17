@@ -44,7 +44,7 @@ const AddEntretien = ({addEntretienApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -61,7 +61,7 @@ const AddEntretien = ({addEntretienApi, error}) => {
             const result = await addEntretienApi(data, token);
         
             if (result === "success") {
-              navigate("/MyComponentReplay6");
+              navigate("/inv/MyComponentReplay6");
             } else {
               setError(true);
               console.error("Failed to add event.");

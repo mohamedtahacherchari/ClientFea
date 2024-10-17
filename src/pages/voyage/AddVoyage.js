@@ -44,7 +44,7 @@ const AddVoyage = ({addVoyageApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -81,7 +81,7 @@ const AddVoyage = ({addVoyageApi, error}) => {
             const result = await addVoyageApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay12");
+              navigate("/inv/MyComponentReplay12");
             } else {
               setError(true);
               console.error("Failed to add event.");

@@ -44,7 +44,7 @@ const AddApprendre = ({addApprendreApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -81,7 +81,7 @@ const AddApprendre = ({addApprendreApi, error}) => {
             const result = await addApprendreApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay8");
+              navigate("/inv/MyComponentReplay8");
             } else {
               setError(true);
               console.error("Failed to add event.");

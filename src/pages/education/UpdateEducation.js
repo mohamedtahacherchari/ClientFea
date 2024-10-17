@@ -110,7 +110,7 @@ const UpdateEducation = ({ updateEducationApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateEducationApi(data, id, token));
      
-    navigate("/MyComponentReplay4")
+    navigate("/inv/MyComponentReplay4")
     } catch (err) {
       setError(true);
       console.error("Failed to update Education:", err);
@@ -124,7 +124,7 @@ const UpdateEducation = ({ updateEducationApi}) => {
       await updateEducationApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay4";
+      window.location.href = "/inv/MyComponentReplay4";
     } catch (err) {
       setError(true);
       console.error("Failed to update Education:", err);

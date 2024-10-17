@@ -116,7 +116,7 @@ console.log(audiovisuelStatus)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay3');
+          navigate('/inv/MyComponentReplay3');
         }
       }
     } catch (err) {
@@ -127,7 +127,7 @@ console.log(audiovisuelStatus)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/AddAudiovisuel"
+        to="/inv/AddAudiovisuel"
         color="primary"
         className={classes.addButton}
       >
@@ -142,7 +142,7 @@ console.log(audiovisuelStatus)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbar'}
+      to={'/inv/AppNavbar'}
     >
       <ListItemText
         primary={audiovisuel.title}
@@ -176,7 +176,7 @@ console.log(audiovisuelStatus)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateAudiovisuel/${audiovisuel.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateAudiovisuel/${audiovisuel.id}`}>
           <EditIcon />
         </IconButton>
       )}

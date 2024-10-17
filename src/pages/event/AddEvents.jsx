@@ -55,7 +55,7 @@ const AddEvents = ({addEventApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
   
@@ -115,7 +115,7 @@ const AddEvents = ({addEventApi, error}) => {
         const result = await addEventApi(data, token);
     
         if (result === "success") {
-          navigate("/MyComponentReplay");
+          navigate("/inv/MyComponentReplay");
         } else {
           setError(true);
           console.error("Failed to add event.");

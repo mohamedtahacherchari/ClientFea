@@ -29,7 +29,7 @@ const schema = yup.object({
   youtubeLink: yup.string().url("Veuillez entrer une URL valide pour YouTube"),
 }).required();
 
-const UpdateAudiovisuel = ({ updateEventApi}) => {
+const UpdateAudiovisuel = ({ updateAudiovisuelApi}) => {
   const{id} =useParams()
   //const event = useSelector((state) => state.event);
   const audiovisuels = useSelector((state) => state.audiovisuels);
@@ -114,7 +114,7 @@ const UpdateAudiovisuel = ({ updateEventApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
       dispatch(updateAudiovisuelApi(data, id, token));
      
-        navigate("/MyComponentReplay3");
+        navigate("/inv/MyComponentReplay3");
         
     } catch (err) {
       setError(true);

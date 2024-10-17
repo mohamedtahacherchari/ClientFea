@@ -81,7 +81,7 @@ const AddInvestir = ({addInvestirApi, error}) => {
             const result = await addInvestirApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay7");
+              navigate("/inv/MyComponentReplay7");
             } else {
               setError(true);
               console.error("Failed to add event.");

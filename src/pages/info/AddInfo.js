@@ -39,7 +39,7 @@ const AddInfo = ({addInfoApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -67,7 +67,7 @@ const onSubmit = async (data) => {
     const result = await addInfoApi(data, token);
 console.log(result)
     if (result === "success") {
-      navigate("/info2");
+      navigate("/inv/info2");
     } else {
       setError(true);
       console.error("Failed to add info .");

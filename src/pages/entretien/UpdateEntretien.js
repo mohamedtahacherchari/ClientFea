@@ -111,7 +111,7 @@ const UpdateEntretien = ({ updateEntretienApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateEntretienApi(data, id, token));
      
-    navigate("/MyComponentReplay4")
+    navigate("/inv/MyComponentReplay4")
     } catch (err) {
       setError(true);
       console.error("Failed to update Entretien:", err);
@@ -125,7 +125,7 @@ const UpdateEntretien = ({ updateEntretienApi}) => {
       await updateEntretienApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay6";
+      window.location.href = "/inv/MyComponentReplay6";
     } catch (err) {
       setError(true);
       console.error("Failed to update entretien:", err);

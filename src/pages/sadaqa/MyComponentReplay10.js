@@ -123,7 +123,7 @@ console.log(sadaqas)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay10');
+          navigate('/inv/MyComponentReplay10');
         }
       }
     } catch (err) {
@@ -134,7 +134,7 @@ console.log(sadaqas)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/addSadaqa"
+        to="/inv/addSadaqa"
         color="primary"
         className={classes.addButton}
       >
@@ -149,7 +149,7 @@ console.log(sadaqas)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarSadaqa'}
+      to={'/inv/AppNavbarSadaqa'}
     >
       <ListItemText
         primary={sadaqa.title}
@@ -183,7 +183,7 @@ console.log(sadaqas)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateSadaqa/${sadaqa.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateSadaqa/${sadaqa.id}`}>
           <EditIcon />
         </IconButton>
       )}

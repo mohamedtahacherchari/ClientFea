@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { ShowSantesApi } from "../../redux/actions/sante/santeActions";
 import { connect } from 'react-redux';
 
-const NavbarLateral = ({ onMenuItemClick, ShowSntesApi }) => {
+const NavbarLateral = ({ onMenuItemClick, ShowSantesApi }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [teamImageUrl, setTeamImageUrl] = useState(null); // État pour stocker l'URL de l'image pour l'équipe
   const token = useSelector(state => state.token);

@@ -76,7 +76,7 @@ const MyComponentReplay = () => {
         button
         disableRipple  // Disable ripple effect on hover
         component={Link}  // Utilisation du composant Link
-        to="/Sante"  // Spécifiez le chemin de votre page ici
+        to="/inv/Sante"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
           </ListItemIcon>
@@ -98,7 +98,7 @@ const MyComponentReplay = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/Sadaqa"  // Spécifiez le chemin de votre page ici
+        to="/inv/Sadaqa"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
           </ListItemIcon>
@@ -119,7 +119,7 @@ const MyComponentReplay = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/Voyage"  // Spécifiez le chemin de votre page ici
+        to="/inv/Voyage"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
           </ListItemIcon>
@@ -141,7 +141,7 @@ const MyComponentReplay = () => {
          className={classes.listItem} 
          button
          component={Link}  // Utilisation du composant Link
-          to="/Audiovisuel"  // Spécifiez le chemin de votre page ici
+          to="/inv/Audiovisuel"  // Spécifiez le chemin de votre page ici
          >
           <ListItemIcon>
           </ListItemIcon>
@@ -162,7 +162,7 @@ const MyComponentReplay = () => {
         className={classes.listItem} 
         button
         component={Link}  // Utilisation du composant Link
-        to="/Spirituel"  // Spécifiez le chemin de votre page ici
+        to="/inv/Spirituel"  // Spécifiez le chemin de votre page ici
         >
           <ListItemIcon>
          </ListItemIcon>

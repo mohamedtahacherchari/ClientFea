@@ -123,7 +123,7 @@ console.log(permacultures)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay8');
+          navigate('/inv/MyComponentReplay8');
         }
       }
     } catch (err) {
@@ -134,7 +134,7 @@ console.log(permacultures)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/addPermaculture"
+        to="/inv/addPermaculture"
         color="primary"
         className={classes.addButton}
       >
@@ -149,7 +149,7 @@ console.log(permacultures)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarPermaculture'}
+      to={'/inv/AppNavbarPermaculture'}
     >
       <ListItemText
         primary={permaculture.title}
@@ -183,7 +183,7 @@ console.log(permacultures)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdatePermaculture/${permaculture.id}`}>
+        <IconButton component={Link} to={`/inv/UpdatePermaculture/${permaculture.id}`}>
           <EditIcon />
         </IconButton>
       )}

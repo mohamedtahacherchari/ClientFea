@@ -123,7 +123,7 @@ console.log(investirs)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay7');
+          navigate('/inv/MyComponentReplay7');
         }
       }
     } catch (err) {
@@ -134,7 +134,7 @@ console.log(investirs)
     <div className={classes.root}>
     <IconButton
         component={Link}
-        to="/addInvestir"
+        to="/inv/addInvestir"
         color="primary"
         className={classes.addButton}
       >
@@ -149,7 +149,7 @@ console.log(investirs)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarInvestir'}
+      to={'/inv/AppNavbarInvestir'}
     >
       <ListItemText
         primary={investir.title}
@@ -183,7 +183,7 @@ console.log(investirs)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateInvestir/${investir.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateInvestir/${investir.id}`}>
           <EditIcon />
         </IconButton>
       )}

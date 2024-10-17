@@ -181,64 +181,64 @@ const updateAvatarPosition = async (newPosition) => {
       case "/inv/NavbarLateral":
         setPageTitle("Audiovisuel");
         break;
-      case "/AppNavbarEducation":
+      case "/inv/AppNavbarEducation":
         setPageTitle("Education des enfants");
         break;
-        case "/AppNavbarEntraide":
+        case "/inv/AppNavbarEntraide":
         setPageTitle("Entraide Pro");
         break;
-      case "/AppNavbarEntretien":
+      case "/inv/AppNavbarEntretien":
         setPageTitle("Grands Entretiens");
         break;
-        case "/AppNavbarInvestir":
+        case "/inv/AppNavbarInvestir":
           setPageTitle("Investir");
           break;
-          case "/AppNavbarApprendre":
+          case "/inv/AppNavbarApprendre":
         setPageTitle("Apprendre à investir");
         break;
-        case "/AppNavbarPermaculture":
+        case "/inv/AppNavbarPermaculture":
           setPageTitle("Permaculture");
           break;
-          case "/AppNavbarSadaqa":
+          case "/inv/AppNavbarSadaqa":
             setPageTitle("Sadaqa/Deen");
             break;
-            case "/AppNavbarSante":
+            case "/inv/AppNavbarSante":
               setPageTitle("Santé");
               break;
-              case "/AppNavbarVoyage":
+              case "/inv/AppNavbarVoyage":
               setPageTitle("Voyage");
               break;
       case "/inv/myprofile":
         setPageTitle("Profile");
         break;
-        case "/Sante":
+        case "/inv/Sante":
         setPageTitle("Présentation du CI Santé");
         break;
-        case "/Voyage":
+        case "/inv/Voyage":
           setPageTitle("Présentation du CI Voyages");
           break;
-          case "/Spirituel":
+          case "/inv/Spirituel":
           setPageTitle("Clôture du séminaire et rappel spirituel");
           break;
-          case "/PoleIT":
+          case "/inv/PoleIT":
           setPageTitle("Présentation Pôle FEA I.T");
           break;
-          case "/PoleAdmin":
+          case "/inv/PoleAdmin":
             setPageTitle("Présentation Pôle FEA Admin");
             break;
-            case "/ExperienceShared":
+            case "/inv/ExperienceShared":
               setPageTitle("Présentation Pôle FEA Projet - Partage d'expérience");
               break;
-              case "/Invest":
+              case "/inv/Invest":
                 setPageTitle("Présentation Pôle FEA Invest");
                 break;
-                case "/Atelier":
+                case "/inv/Atelier":
                   setPageTitle("Atelier Covid19, et après ? que proposent les membres FEA ?");
                   break;
-                  case "/Presentation":
+                  case "/inv/Presentation":
                     setPageTitle("Presentation de l'Equipe d'organisation FEA");
                     break;
-                    case "/Ouverture":
+                    case "/inv/Ouverture":
                     setPageTitle("Ouverture du séminaire du 13 juin 2020");
                     break;
       default:
@@ -307,7 +307,7 @@ const updateAvatarPosition = async (newPosition) => {
 
  
 { user.role == 1 && 
-    <ListItem button onClick={() => handleItemClick("/MyComponentReplay3", "Admin")}>
+    <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay3", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -315,12 +315,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Second Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarEducation", "Éducation des enfants")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarEducation", "Éducation des enfants")}>
       <ListItemIcon><SchoolIcon /></ListItemIcon>
       <ListItemText primary="Éducation des enfants" />
     </ListItem>
 
-    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/MyComponentReplay4", "Admin")}>
+    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay4", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -328,12 +328,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Third Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-   <ListItem button onClick={() => handleItemClick("/AppNavbarEntraide", "Entraide Pro")}>
+   <ListItem button onClick={() => handleItemClick("/inv/AppNavbarEntraide", "Entraide Pro")}>
       <ListItemIcon><PeopleIcon /></ListItemIcon>
       <ListItemText primary="Entraide Pro" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay5", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay5", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -341,12 +341,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Fourth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarEntretien", "Grands Entretiens")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarEntretien", "Grands Entretiens")}>
       <ListItemIcon><TvIcon /></ListItemIcon>
       <ListItemText primary="Grands Entretiens" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay6", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay6", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -354,12 +354,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Fifth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarInvestir", "Investir")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarInvestir", "Investir")}>
       <ListItemIcon><HomeIcon /></ListItemIcon>
       <ListItemText primary="Investir" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay7", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay7", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -367,12 +367,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Sixth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarApprendre", "Apprendre à investir")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarApprendre", "Apprendre à investir")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Apprendre à investir" />
     </ListItem>
 
-    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/MyComponentReplay8", "Admin")}>
+    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay8", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -380,12 +380,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Seventh Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarPermaculture", "Permaculture")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarPermaculture", "Permaculture")}>
       <ListItemIcon><SpaIcon /></ListItemIcon>
       <ListItemText primary="Permaculture" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay9", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay9", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -393,12 +393,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Eighth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarSadaqa", "Sadaqa/Deen")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarSadaqa", "Sadaqa/Deen")}>
       <ListItemIcon><FavoriteIcon /></ListItemIcon>
       <ListItemText primary="Sadaqa/Deen" />
     </ListItem>
 
-    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/MyComponentReplay10", "Admin")}>
+    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay10", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -406,12 +406,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Ninth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarSante", "Santé")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarSante", "Santé")}>
       <ListItemIcon><HealthAndSafetyIcon /></ListItemIcon>
       <ListItemText primary="Santé" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay11", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay11", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -419,12 +419,12 @@ const updateAvatarPosition = async (newPosition) => {
 
   {/* Tenth Row */}
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/AppNavbarVoyage", "Voyages")}>
+    <ListItem button onClick={() => handleItemClick("/inv/AppNavbarVoyage", "Voyages")}>
       <ListItemIcon><FlightIcon /></ListItemIcon>
       <ListItemText primary="Voyages" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/MyComponentReplay12", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/MyComponentReplay12", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -437,7 +437,7 @@ const updateAvatarPosition = async (newPosition) => {
       <ListItemText primary="Mon Profile" />
     </ListItem>
 
-    { user.role == 1 &&   <ListItem button onClick={() => handleItemClick("/admin", "Admin")}>
+    { user.role == 1 &&   <ListItem button onClick={() => handleItemClick("/inv/admin", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -449,7 +449,7 @@ const updateAvatarPosition = async (newPosition) => {
       <ListItemText primary="List des utilisateurs" />
     </ListItem>}
 
-    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/admin", "Admin")}>
+    { user.role == 1 && <ListItem button onClick={() => handleItemClick("/inv/admin", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -461,19 +461,19 @@ const updateAvatarPosition = async (newPosition) => {
       <ListItemText primary="Déconnexion" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/admin", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/admin", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
   </Box>
 
   <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingX: 2 }}>
-    <ListItem button onClick={() => handleItemClick("/Apropos", "About")}>
+    <ListItem button onClick={() => handleItemClick("/inv/Apropos", "About")}>
       <ListItemIcon><InfoIcon /></ListItemIcon>
       <ListItemText primary="À Propos" />
     </ListItem>
 
-    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/admin", "Admin")}>
+    { user.role == 1 &&  <ListItem button onClick={() => handleItemClick("/inv/admin", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}
@@ -485,7 +485,7 @@ const updateAvatarPosition = async (newPosition) => {
       <ListItemText primary="Sign Out" />
     </ListItem>
 
-    { user.role == 1 &&   <ListItem button onClick={() => handleItemClick("/admin", "Admin")}>
+    { user.role == 1 &&   <ListItem button onClick={() => handleItemClick("/inv/admin", "Admin")}>
       <ListItemIcon><AccountBalanceIcon /></ListItemIcon>
       <ListItemText primary="Admin" />
     </ListItem>}

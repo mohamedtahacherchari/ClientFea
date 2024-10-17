@@ -68,7 +68,7 @@ const Popping = ({ open, handleClose, event, deleteEventApi, renderStatus, reren
         <Button variant="contained" color="warning" onClick={handleClose} className={classes.buttonCustom}>
           Fermer
         </Button>
-        <Link to={`/event/${id}/update`}>
+        <Link to={`/inv/event/${id}/update`}>
           <Button variant="contained" color="success" className={classes.buttonCustom}>
             Mettre à jour
           </Button>

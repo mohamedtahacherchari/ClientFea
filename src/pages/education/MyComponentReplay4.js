@@ -123,7 +123,7 @@ console.log(educations)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay4');
+          navigate('/inv/MyComponentReplay4');
         }
       }
     } catch (err) {

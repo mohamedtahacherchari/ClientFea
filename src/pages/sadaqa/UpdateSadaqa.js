@@ -113,7 +113,7 @@ const UpdateSadaqa = ({ updateSadaqaApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateSadaqaApi(data, id, token));
      
-    navigate("/MyComponentReplay10")
+    navigate("/inv/MyComponentReplay10")
     } catch (err) {
       setError(true);
       console.error("Failed to update Investissement:", err);
@@ -127,7 +127,7 @@ const UpdateSadaqa = ({ updateSadaqaApi}) => {
       await updateSadaqaApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay10";
+      window.location.href = "/inv/MyComponentReplay10";
     } catch (err) {
       setError(true);
       console.error("Failed to update sadaqa:", err);

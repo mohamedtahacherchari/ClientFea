@@ -78,7 +78,7 @@ const AddPermaculture = ({addPermacultureApi, error}) => {
             const result = await addPermacultureApi(data, token);
             console.log('API response:', result);
             if (result === "success") {
-              navigate("/MyComponentReplay9");
+              navigate("/inv/MyComponentReplay9");
             } else {
               setError(true);
               console.error("Failed to add event.");

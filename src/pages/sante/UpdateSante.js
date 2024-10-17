@@ -113,7 +113,7 @@ const UpdateSante = ({ updateSanteApi}) => {
       // Utilisez dispatch pour appeler l'action updateAudiovisuelApi
     await  dispatch(updateSanteApi(data, id, token));
      
-    navigate("/MyComponentReplay11")
+    navigate("/inv/MyComponentReplay11")
     } catch (err) {
       setError(true);
       console.error("Failed to update Investissement:", err);
@@ -127,7 +127,7 @@ const UpdateSante = ({ updateSanteApi}) => {
       await updateSanteApi(data, id, token);
       
       // Remplacer navigate par une redirection avec window.location.href
-      window.location.href = "/MyComponentReplay11";
+      window.location.href = "/inv/MyComponentReplay11";
     } catch (err) {
       setError(true);
       console.error("Failed to update sante:", err);

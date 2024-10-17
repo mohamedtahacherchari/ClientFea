@@ -211,115 +211,115 @@ const Home = (props) => {
                     <Route path="//inv/users" element={<Users/>} />
 
                     <Route path="/inv/myProfile" element={<MyProfile/>} />
-                    <Route path="/clander" element={<Calendar/>}></Route>
-                    <Route path="/events/add" element={<AddEvents/>}/>
-                    <Route path="/event/:id/update" element={<UpdateEvent/>}/>
-                    <Route path="/Accueil" element={<BackgroundPhoto/>}/>
-                     <Route path="/maps" element={<MapsComponent/>}/>
-                     <Route path="/info" element={<MonComposant/>}/>
-                     <Route path="/info2" element={<MonComposant2/>}/>
-                     <Route path="/LinkToOrganigramme" element={<LinkToOrganigramme/>}/>
-                     <Route path="/LinkToReseaux" element={<LinkToReseaux/>}/>
-                     <Route path="/SeminairesIcon2" element={<SeminairesIcon2/>}/>
-                     <Route path="/LivretBlanc" element={<LivretBlanc/>}/>
-                     <Route path="/Podcast" element={<Podcast/>}/>
-                     <Route path="/Challenge" element={<Challenge/>}/>
-                     <Route path="/Video" element={<Video/>}/>
-                     <Route path="/LinkToModeration" element={<LinkToModeration/>}/>
-                     <Route path="/LinkToContact" element={<LinkToContact/>}/>
-                     <Route path="/MyComponentReplay" element={<MyComponentReplay/>}/>
-                     <Route path="/MyComponentReplay2" element={<MyComponentReplay2/>}/>
-                     <Route path="/Equipe2" element={<Equipe2/>}/>
-                     <Route path="/" element={<HomeReplay/>}/>
-                     <Route path='/Sante' element={<Sante/>} />
-                     <Route path='/Sadaqa' element={<Sadaqa/>} />
-                     <Route path='/Voyage' element={<Voyage/>} />
-                     <Route path='/Audiovisuel' element={<Audiovisuel/>} />
-                     <Route path='/Spirituel' element={<Spirituel/>} />
-                     <Route path='/PoleIT' element={<PoleIT/>} />
-                     <Route path='/PoleAdmin' element={<PoleAdmin/>} />
-                     <Route path='/Elearning' element={<Elearning/>} />
-                     <Route path='/ExperienceShared' element={<ExperienceShared/>} />
-                     <Route path='/Invest' element={<Invest/>} />
-                     <Route path='/Atelier' element={<Atelier/>} />
-                     <Route path='/Presentation' element={<Presentation/>}/>
-                     <Route path='/Ouverture' element={<Ouverture/>}/>
-                     <Route path='/event/:id' element={<EventById/>}/>
+                    <Route path="/inv/clander" element={<Calendar/>}></Route>
+                    <Route path="/inv/events/add" element={<AddEvents/>}/>
+                    <Route path="/inv/event/:id/update" element={<UpdateEvent/>}/>
+                    <Route path="/inv/Accueil" element={<BackgroundPhoto/>}/>
+                     <Route path="/inv/maps" element={<MapsComponent/>}/>
+                     <Route path="/inv/info" element={<MonComposant/>}/>
+                     <Route path="/inv/info2" element={<MonComposant2/>}/>
+                     <Route path="/inv/LinkToOrganigramme" element={<LinkToOrganigramme/>}/>
+                     <Route path="/inv/LinkToReseaux" element={<LinkToReseaux/>}/>
+                     <Route path="/inv/SeminairesIcon2" element={<SeminairesIcon2/>}/>
+                     <Route path="/inv/LivretBlanc" element={<LivretBlanc/>}/>
+                     <Route path="/inv/Podcast" element={<Podcast/>}/>
+                     <Route path="/inv/Challenge" element={<Challenge/>}/>
+                     <Route path="/inv/Video" element={<Video/>}/>
+                     <Route path="/inv/LinkToModeration" element={<LinkToModeration/>}/>
+                     <Route path="/inv/LinkToContact" element={<LinkToContact/>}/>
+                     <Route path="/inv/MyComponentReplay" element={<MyComponentReplay/>}/>
+                     <Route path="/inv/MyComponentReplay2" element={<MyComponentReplay2/>}/>
+                     <Route path="/inv/Equipe2" element={<Equipe2/>}/>
+                     <Route path="/inv" element={<HomeReplay/>}/>
+                     <Route path='/inv/Sante' element={<Sante/>} />
+                     <Route path='/inv/Sadaqa' element={<Sadaqa/>} />
+                     <Route path='/inv/Voyage' element={<Voyage/>} />
+                     <Route path='/inv/Audiovisuel' element={<Audiovisuel/>} />
+                     <Route path='/inv/Spirituel' element={<Spirituel/>} />
+                     <Route path='/inv/PoleIT' element={<PoleIT/>} />
+                     <Route path='/inv/PoleAdmin' element={<PoleAdmin/>} />
+                     <Route path='/inv/Elearning' element={<Elearning/>} />
+                     <Route path='/inv/ExperienceShared' element={<ExperienceShared/>} />
+                     <Route path='/inv/Invest' element={<Invest/>} />
+                     <Route path='/inv/Atelier' element={<Atelier/>} />
+                     <Route path='/inv/Presentation' element={<Presentation/>}/>
+                     <Route path='/inv/Ouverture' element={<Ouverture/>}/>
+                     <Route path='/inv/event/:id' element={<EventById/>}/>
                     {/* <Route path='/PDFViewerComponent/:id' element={<PDFViewerComponent/>}/>*/}
                    {/* <Route path='/eve' element={<MyPDFViewer/>}/>*/}
-                   <Route path='/AddInfo' element={<AddInfo/>}/>
-                   <Route path='/AddAudiovisuel' element={<AddAudiovisuel/>}/>
-                   <Route path='/info/:id' element={<InfoByIdById/>}/>
-                   <Route path='/EditInfo/:id' element={<EditInfo/>}/>
-                   <Route path='/mapComponent' element={<MapComponent/>}/>
-                   <Route path='/UserMap' element={<UserMap/>}/>
-                   <Route path='/inv/NavbarLateral' element={<AppNavbar/>}/>
-                   <Route path='/MyComponentReplay3' element={<MyComponentReplay3/>}/>
-                   <Route path='/AudiovisualCard' element={<AudiovisualCard/>}/>
-                   <Route path='/AppNavbar' element={<AppNavbar/>}/>
-                   <Route path='/UpdateAudiovisuel/:id' element={<UpdateAudiovisuel/>}/>
-                   <Route path='/FicheProjet' element={<FicheProjet/>}/>
-                   <Route path='/FicheProjetEducation' element={<FicheProjetEducation/>}/>
-                   <Route path='/MontageVideo' element={<MontageVideo/>}/>
-                   <Route path='/Video1' element={<Video1/>}/>
-                   <Route path='/Video2' element={<Video2/>}/>
-                   <Route path='/Patenaires' element={<Patenaires/>}/>
-                   <Route path='/Youtube1' element={<Youtube1/>}/>
-                   <Route path='/Youtube2' element={<Youtube2/>}/>
-                   <Route path='/addEducation' element={<AddEducation/>}/>
-                   <Route path='/MyComponentReplay4' element={<MyComponentReplay4/>}/>
-                   <Route path='/UpdateEducation/:id' element={<UpdateEducation/>}/>
-                   <Route path='/AppNavbarEducation' element={<AppNavbarEducation/>}/>
-                   <Route path='/AppNavbarEntraide' element={<AppNavbarEntraide/>}/>
-                   <Route path='/addEntraide' element={<AddEntraide/>}/>
-                   <Route path='/MyComponentReplay5' element={<MyComponentReplay5/>}/>
-                   <Route path='/UpdateEntraide/:id' element={<UpdateEntraide/>}/>
-                   <Route path='/FicheProjetEntraide' element={<FicheProjetEntraide/>}/>
-                   <Route path='/addEntretien' element={<AddEntretien/>}/>
-                   <Route path='/MyComponentReplay6' element={<MyComponentReplay6/>}/>
-                   <Route path='/AppNavbarEntretien' element={<AppNavbarEntretien/>}/>
-                   <Route path='/addEntretien' element={<AddEntretien/>}/>
-                   <Route path='/MyComponentReplay6' element={<MyComponentReplay6/>}/>
-                   <Route path='/UpdateEntretien/:id' element={<UpdateEntretien/>}/>
-               <Route path='/FicheProjetEntretien' element={<FicheProjetEntretien/>}/>
+                   <Route path='/inv/AddInfo' element={<AddInfo/>}/>
+                   <Route path='/inv/AddAudiovisuel' element={<AddAudiovisuel/>}/>
+                   <Route path='/inv/info/:id' element={<InfoByIdById/>}/>
+                   <Route path='/inv/EditInfo/:id' element={<EditInfo/>}/>
+                   <Route path='/inv/mapComponent' element={<MapComponent/>}/>
+                   <Route path='/inv/UserMap' element={<UserMap/>}/>
+                   <Route path='/inv/inv/NavbarLateral' element={<AppNavbar/>}/>
+                   <Route path='/inv/MyComponentReplay3' element={<MyComponentReplay3/>}/>
+                   <Route path='/inv/AudiovisualCard' element={<AudiovisualCard/>}/>
+                   <Route path='/inv/AppNavbar' element={<AppNavbar/>}/>
+                   <Route path='/inv/UpdateAudiovisuel/:id' element={<UpdateAudiovisuel/>}/>
+                   <Route path='/inv/FicheProjet' element={<FicheProjet/>}/>
+                   <Route path='/inv/FicheProjetEducation' element={<FicheProjetEducation/>}/>
+                   <Route path='/inv/MontageVideo' element={<MontageVideo/>}/>
+                   <Route path='/inv/Video1' element={<Video1/>}/>
+                   <Route path='/inv/Video2' element={<Video2/>}/>
+                   <Route path='/inv/Patenaires' element={<Patenaires/>}/>
+                   <Route path='/inv/Youtube1' element={<Youtube1/>}/>
+                   <Route path='/inv/Youtube2' element={<Youtube2/>}/>
+                   <Route path='/inv/addEducation' element={<AddEducation/>}/>
+                   <Route path='/inv/MyComponentReplay4' element={<MyComponentReplay4/>}/>
+                   <Route path='/inv/UpdateEducation/:id' element={<UpdateEducation/>}/>
+                   <Route path='/inv/AppNavbarEducation' element={<AppNavbarEducation/>}/>
+                   <Route path='/inv/AppNavbarEntraide' element={<AppNavbarEntraide/>}/>
+                   <Route path='/inv/addEntraide' element={<AddEntraide/>}/>
+                   <Route path='/inv/MyComponentReplay5' element={<MyComponentReplay5/>}/>
+                   <Route path='/inv/UpdateEntraide/:id' element={<UpdateEntraide/>}/>
+                   <Route path='/inv/FicheProjetEntraide' element={<FicheProjetEntraide/>}/>
+                   <Route path='/inv/addEntretien' element={<AddEntretien/>}/>
+                   <Route path='/inv/MyComponentReplay6' element={<MyComponentReplay6/>}/>
+                   <Route path='/inv/AppNavbarEntretien' element={<AppNavbarEntretien/>}/>
+                   <Route path='/inv/addEntretien' element={<AddEntretien/>}/>
+                   <Route path='/inv/MyComponentReplay6' element={<MyComponentReplay6/>}/>
+                   <Route path='/inv/UpdateEntretien/:id' element={<UpdateEntretien/>}/>
+               <Route path='/inv/FicheProjetEntretien' element={<FicheProjetEntretien/>}/>
 
-               <Route path='/addInvestir' element={<AddInvestir/>}/>
-                   <Route path='/MyComponentReplay7' element={<MyComponentReplay7/>}/>
-                   <Route path='/AppNavbarInvestir' element={<AppNavbarInvestir/>}/>
-                   <Route path='/UpdateInvestir/:id' element={<UpdateInvestir/>}/>
-               <Route path='/FicheProjetInvestir' element={<FicheProjetInvestir/>}/>
+               <Route path='/inv/addInvestir' element={<AddInvestir/>}/>
+                   <Route path='/inv/MyComponentReplay7' element={<MyComponentReplay7/>}/>
+                   <Route path='/inv/AppNavbarInvestir' element={<AppNavbarInvestir/>}/>
+                   <Route path='/inv/UpdateInvestir/:id' element={<UpdateInvestir/>}/>
+               <Route path='/inv/FicheProjetInvestir' element={<FicheProjetInvestir/>}/>
 
-               <Route path='/addApprendre' element={<AddApprendre/>}/>
-               <Route path='/UpdateApprendre/:id' element={<UpdateApprendre/>}/>
-               <Route path='/MyComponentReplay8' element={<MyComponentReplay8/>}/>
-               <Route path='/AppNavbarApprendre' element={<AppNavbarApprendre/>}/>
-               <Route path='/FicheProjetApprendre' element={<FicheProjetApprendre/>}/>
-
-
-               <Route path='/addPermaculture' element={<AddPermaculture/>}/>
-               <Route path='/UpdatePermaculture/:id' element={<UpdatePermaculture/>}/>
-               <Route path='/MyComponentReplay9' element={<MyComponentReplay9/>}/>
-               <Route path='/AppNavbarPermaculture' element={<AppNavbarPermaculture/>}/>
-               <Route path='/FicheProjetPermaculture' element={<FicheProjetPermaculture/>}/>
-
-               <Route path='/addSadaqa' element={<AddSadaqa/>}/>
-               <Route path='/UpdateSadaqa/:id' element={<UpdateSadaqa/>}/>
-               <Route path='/MyComponentReplay10' element={<MyComponentReplay10/>}/>
-               <Route path='/AppNavbarSadaqa' element={<AppNavbarSadaqa/>}/>
+               <Route path='/inv/addApprendre' element={<AddApprendre/>}/>
+               <Route path='/inv/UpdateApprendre/:id' element={<UpdateApprendre/>}/>
+               <Route path='/inv/MyComponentReplay8' element={<MyComponentReplay8/>}/>
+               <Route path='/inv/AppNavbarApprendre' element={<AppNavbarApprendre/>}/>
+               <Route path='/inv/FicheProjetApprendre' element={<FicheProjetApprendre/>}/>
 
 
-               <Route path='/addSante' element={<AddSante/>}/>
-               <Route path='/UpdateSante/:id' element={<UpdateSante/>}/>
-               <Route path='/AppNavbarSante' element={<AppNavbarSante/>}/>
-               <Route path='/MyComponentReplay11' element={<MyComponentReplay11/>}/>
+               <Route path='/inv/addPermaculture' element={<AddPermaculture/>}/>
+               <Route path='/inv/UpdatePermaculture/:id' element={<UpdatePermaculture/>}/>
+               <Route path='/inv/MyComponentReplay9' element={<MyComponentReplay9/>}/>
+               <Route path='/inv/AppNavbarPermaculture' element={<AppNavbarPermaculture/>}/>
+               <Route path='/inv/FicheProjetPermaculture' element={<FicheProjetPermaculture/>}/>
 
-               <Route path='/addVoyage' element={<AddVoyage/>}/>
-               <Route path='/UpdateVoyage/:id' element={<UpdateVoyage/>}/>
-               <Route path='/AppNavbarVoyage' element={<AppNavbarVoyage/>}/>
-               <Route path='/MyComponentReplay12' element={<MyComponentReplay12/>}/>
+               <Route path='/inv/addSadaqa' element={<AddSadaqa/>}/>
+               <Route path='/inv/UpdateSadaqa/:id' element={<UpdateSadaqa/>}/>
+               <Route path='/inv/MyComponentReplay10' element={<MyComponentReplay10/>}/>
+               <Route path='/inv/AppNavbarSadaqa' element={<AppNavbarSadaqa/>}/>
 
 
-               <Route path='/Apropos' element={<Apropos/>}/>
+               <Route path='/inv/addSante' element={<AddSante/>}/>
+               <Route path='/inv/UpdateSante/:id' element={<UpdateSante/>}/>
+               <Route path='/inv/AppNavbarSante' element={<AppNavbarSante/>}/>
+               <Route path='/inv/MyComponentReplay11' element={<MyComponentReplay11/>}/>
+
+               <Route path='/inv/addVoyage' element={<AddVoyage/>}/>
+               <Route path='/inv/UpdateVoyage/:id' element={<UpdateVoyage/>}/>
+               <Route path='/inv/AppNavbarVoyage' element={<AppNavbarVoyage/>}/>
+               <Route path='/inv/MyComponentReplay12' element={<MyComponentReplay12/>}/>
+
+
+               <Route path='/inv/Apropos' element={<Apropos/>}/>
 
 
 

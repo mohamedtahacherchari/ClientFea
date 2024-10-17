@@ -22,23 +22,23 @@ function BottomNavbar() {
   useEffect(() => {
     const currentPath = location.pathname;
     switch (currentPath) {
-      case "/Accueil":
+      case "/inv/Accueil":
         setSelectedTitle("Accueil");
         setValue(0);
         break;
-      case "/Clander": // Correction du chemin
+      case "/inv/Clander": // Correction du chemin
         setSelectedTitle("Agenda");
         setValue(1);
         break;
-      case "/UserMap":
+      case "/inv/UserMap":
         setSelectedTitle("Info Map");
         setValue(2);
         break;
-      case "/MyComponentReplay":
+      case "/inv/MyComponentReplay":
         setSelectedTitle("Replay");
         setValue(3);
         break;
-      case "/info":
+      case "/inv/info":
         setSelectedTitle("Info");
         setValue(4);
         break;
@@ -61,11 +61,11 @@ function BottomNavbar() {
         showLabels
         style={{ position: 'fixed', bottom: 0, width: '100%', zIndex: 1 }}
       >
-        <BottomNavigationAction label="Accueil" icon={<HomeIcon />} onClick={() => handleItemClick("Accueil", 0, "/Accueil")} />
-        <BottomNavigationAction label="Agenda" icon={<EventIcon />} onClick={() => handleItemClick("Agenda", 1, "/Clander")} />
-        <BottomNavigationAction label="Info Map" icon={<MapIcon />} onClick={() => handleItemClick("Info Map", 2, "/UserMap")} />
-        <BottomNavigationAction label="Replay" icon={<ReplayIcon />} onClick={() => handleItemClick("Replay", 3, "/MyComponentReplay")} />
-        <BottomNavigationAction label="Info" icon={<InfoIcon />} onClick={() => handleItemClick("Info", 4, "/info2")} />
+        <BottomNavigationAction label="Accueil" icon={<HomeIcon />} onClick={() => handleItemClick("Accueil", 0, "/inv/Accueil")} />
+        <BottomNavigationAction label="Agenda" icon={<EventIcon />} onClick={() => handleItemClick("Agenda", 1, "/inv/Clander")} />
+        <BottomNavigationAction label="Info Map" icon={<MapIcon />} onClick={() => handleItemClick("Info Map", 2, "/inv/UserMap")} />
+        <BottomNavigationAction label="Replay" icon={<ReplayIcon />} onClick={() => handleItemClick("Replay", 3, "/inv/MyComponentReplay")} />
+        <BottomNavigationAction label="Info" icon={<InfoIcon />} onClick={() => handleItemClick("Info", 4, "/inv/info2")} />
       </BottomNavigation>
     </div>
   );

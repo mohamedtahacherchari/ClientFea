@@ -76,7 +76,7 @@ const MyComponent = ({ open, handleClose,ShowInfosApi ,deleteInfoApi ,info,rende
                 })
                 setLoading(false)
                 setCallback(!callback)
-                navigate('/info2');
+                navigate('/inv/info2');
             }
         }
         
@@ -90,7 +90,7 @@ const MyComponent = ({ open, handleClose,ShowInfosApi ,deleteInfoApi ,info,rende
     <div className={classes.root}>
        <div className="navbar-brand mb-0 h2" style={{ display: 'flex' }}>
   <span>
-    <Link className="nav-link pe-0" to={"/AddInfo"}>Ajouter une information</Link>
+    <Link className="nav-link pe-0" to={"/inv/AddInfo"}>Ajouter une information</Link>
   </span>
 </div>
           <List component="nav" aria-label="main mailbox folders">
@@ -112,7 +112,7 @@ const MyComponent = ({ open, handleClose,ShowInfosApi ,deleteInfoApi ,info,rende
               primary={info.title}/>
            
 
-  {user.role == 1 && <IconButton component={Link} to={`/EditInfo/${info.id}`}>
+  {user.role == 1 && <IconButton component={Link} to={`/inv/EditInfo/${info.id}`}>
             <EditIcon />
           </IconButton>}
   {user.role == 1 && <IconButton onClick={() => handleDelete2(info.id)}>

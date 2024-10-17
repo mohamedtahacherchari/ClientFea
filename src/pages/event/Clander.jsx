@@ -24,8 +24,8 @@ function Home() {
       </div>
     </nav>
     <Routes>
-      <Route  path="/" exact element={<MyCalendar/>} />
-      <Route path="/events/add" element={<AddEvents/>}/>
+      <Route  path="/inv" exact element={<MyCalendar/>} />
+      <Route path="/inv/events/add" element={<AddEvents/>}/>
 {  /*    <Route path="/event/:id/update" element={<UpdateEvent/>}/>
 */}    </Routes>
     </>

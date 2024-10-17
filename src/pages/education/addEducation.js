@@ -44,7 +44,7 @@ const AddEducation = ({addEducationApi, error}) => {
         
       }
         if(!error.start && !error.end && dbError !== false){
-          setTimeout(navigate("/")) 
+          setTimeout(navigate("/inv")) 
         }
      }, [rerender])
     //using form-hook to register info data
@@ -61,7 +61,7 @@ const AddEducation = ({addEducationApi, error}) => {
             const result = await addEducationApi(data, token);
         
             if (result === "success") {
-              navigate("/MyComponentReplay");
+              navigate("/inv/MyComponentReplay");
             } else {
               setError(true);
               console.error("Failed to add event.");

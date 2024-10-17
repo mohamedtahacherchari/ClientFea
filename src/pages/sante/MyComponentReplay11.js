@@ -123,7 +123,7 @@ console.log(santes)
           setCallback(!callback);
           
           // Navigate after deletion
-          navigate('/MyComponentReplay11');
+          navigate('/inv/MyComponentReplay11');
         }
       }
     } catch (err) {
@@ -149,7 +149,7 @@ console.log(santes)
       button
       disableRipple
       component={Link}
-      to={'/AppNavbarSante'}
+      to={'/inv/AppNavbarSante'}
     >
       <ListItemText
         primary={sante.title}
@@ -183,7 +183,7 @@ console.log(santes)
       </div>
       
       {user.role === 1 && (
-        <IconButton component={Link} to={`/UpdateSante/${sante.id}`}>
+        <IconButton component={Link} to={`/inv/UpdateSante/${sante.id}`}>
           <EditIcon />
         </IconButton>
       )}
